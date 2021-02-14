@@ -14,6 +14,6 @@ export default Vue.extend({
 <template>
   <div id="app">
     <fresh-breath-vue-sample />
-    <fresh-breath-button />
+    <fresh-breath-button type="br" />
   </div>
 </template>
