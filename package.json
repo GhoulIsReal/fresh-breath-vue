@@ -1,6 +1,6 @@
 {
   "name": "fresh-breath-vue",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "main": "dist/fresh-breath-vue.ssr.js",
   "browser": "dist/fresh-breath-vue.esm.js",

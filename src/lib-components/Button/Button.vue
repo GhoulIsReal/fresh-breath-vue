@@ -1,14 +1,16 @@
 <template>
-  <Button :type="type" :hover="hover" :inline="inline">Test</Button>
+  <StyledButton :type="type" :hover="hover" :inline="inline"
+    ><slot></slot
+  ></StyledButton>
 </template>
 
 <script>
 import * as styled from "./ButtonStyles";
 
 export default {
-  name: "FreshBreathButton",
+  name: "Button",
   components: {
-    Button: styled.Button,
+    StyledButton: styled.Button,
   },
   props: {
     type: "error" | "success",
