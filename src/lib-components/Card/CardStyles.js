@@ -1,6 +1,11 @@
-import styled from "styled-components-vue";
+import styled from "vue-styled-components";
 
-const Holder = styled.div`
+const holderProps = {
+  width: Number,
+  height: Number,
+};
+
+const Holder = styled("div", holderProps)`
   display: flex;
   flex-flow: column;
   align-items: center;

@@ -1,6 +1,12 @@
-import styled from "styled-components-vue";
+import styled from "vue-styled-components";
 
-const Flex = styled.div`
+const flexProps = {
+  direction: String,
+  align: String,
+  justify: String,
+};
+
+const Flex = styled("div", flexProps)`
   width: 100%;
   display: flex;
   flex-flow: ${(props) => props.direction || "row"};

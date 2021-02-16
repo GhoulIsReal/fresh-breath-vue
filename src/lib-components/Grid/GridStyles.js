@@ -1,6 +1,12 @@
-import styled from "styled-components-vue";
+import styled from "vue-styled-components";
 
-const Grid = styled.div`
+const gridProps = {
+  justify: String,
+  cols: Number,
+  evenly: String,
+};
+
+const Grid = styled("div", gridProps)`
   display: grid;
   justify-items: ${(props) => props.justify};
   grid-template-columns: repeat(

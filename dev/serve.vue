@@ -1,6 +1,16 @@
 <script>
 import Vue from "vue";
-import { Button, Card, Breadcrumb, Flex, Grid, Table } from "@/entry.esm";
+import {
+  Button,
+  Card,
+  Breadcrumb,
+  Flex,
+  Grid,
+  Table,
+  Search,
+  Anchor,
+} from "@/entry.esm";
+import InfoIcon from "./infoIcon.svg";
 
 export default Vue.extend({
   name: "ServeDev",
@@ -11,9 +21,12 @@ export default Vue.extend({
     Flex,
     Grid,
     Table,
+    Search,
+    Anchor,
   },
   data() {
     return {
+      InfoIcon: InfoIcon,
       heading: ["Name", "Surname", "Born", "Address"],
       tableData: [
         {
@@ -47,6 +60,7 @@ export default Vue.extend({
           address: "dom pushkina",
         },
       ],
+      searchText: "",
     };
   },
 });
@@ -76,7 +90,7 @@ export default Vue.extend({
       ><div>First div</div>
       <div>Second div</div></Flex
     >
-    <Grid minWidth="300px" gap="1rem" width="50%">
+    <Grid gap="1rem" :cols="2">
       <Card
         heading1="Maek"
         paragraph2="sadasdsad sadasdadssadasdads sadasdads sadasdads sadasdads sadasdads sadasdads sadasdads sadasdads"
@@ -120,5 +134,14 @@ export default Vue.extend({
       :tableHeading="heading"
       :tableData="tableData"
     ></Table>
+    <Search width="500" v-model="searchText" />
+    <Anchor
+      href="/about"
+      hover
+      color="green"
+      :Extra="{ Content: InfoIcon, position: 'left' }"
+      underline
+      >Redirect</Anchor
+    >
   </div>
 </template>

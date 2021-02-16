@@ -1,4 +1,13 @@
-import styled from "styled-components-vue";
+import styled from "vue-styled-components";
+
+const colorProp = {
+  color: String,
+};
+
+const cellProps = {
+  color: String,
+  wrap: Boolean,
+};
 
 const Table = styled.table`
   text-align: left;
@@ -7,19 +16,19 @@ const Table = styled.table`
   border-collapse: collapse;
 `;
 
-const Header = styled.thead`
+const Header = styled("thead", colorProp)`
   text-transform: uppercase;
   background: ${(props) => (props.color ? props.color : "#000")};
 `;
 
-const heading = styled.th`
+const heading = styled("th", colorProp)`
   padding: 1rem 1.5rem;
   max-width: 200px;
   font-weight: 400;
   color: ${(props) => (props.color ? props.color : "#fff")};
 `;
 
-const Body = styled.tbody`
+const Body = styled("tbody", colorProp)`
   background: ${(props) => (props.color ? props.color : "#fff")};
 `;
 
@@ -29,7 +38,7 @@ const row = styled.tr`
   }
 `;
 
-const cell = styled.td`
+const cell = styled("td", cellProps)`
   padding: 1rem 1.5rem;
   max-width: 200px;
   color: ${(props) => (props.color ? props.color : "#000")};

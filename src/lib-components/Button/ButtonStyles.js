@@ -1,4 +1,10 @@
-import styled from "styled-components-vue";
+import styled from "vue-styled-components";
+
+const buttonProps = {
+  inline: Boolean,
+  type: String,
+  hover: Boolean,
+};
 
 const Button = styled.button`
   cursor: pointer;

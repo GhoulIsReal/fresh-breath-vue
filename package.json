@@ -22,7 +22,7 @@
     "build:unpkg": "cross-env NODE_ENV=production rollup --config build/rollup.config.js --format iife"
   },
   "dependencies": {
-    "styled-components-vue": "^2.0.0"
+    "vue-styled-components": "^1.6.0"
   },
   "devDependencies": {
     "@babel/core": "^7.12.10",

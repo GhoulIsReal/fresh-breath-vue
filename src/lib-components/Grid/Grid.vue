@@ -1,5 +1,5 @@
 <template>
-  <StyledGrid :evenly="evenly" :gap="gap" :justify="justify"
+  <StyledGrid :evenly="evenly" :gap="gap" :justify="justify" :cols="cols"
     ><slot></slot
   ></StyledGrid>
 </template>
@@ -12,7 +12,7 @@ export default {
   components: {
     StyledGrid: styled.Grid,
   },
-  props: ["evenly", "gap", "justify"],
+  props: ["evenly", "gap", "justify", "cols"],
 };
 </script>
 

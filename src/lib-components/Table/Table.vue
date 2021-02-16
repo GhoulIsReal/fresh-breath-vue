@@ -17,7 +17,7 @@
           v-for="(val, ind) in cellCounter[index]"
           :title="wrap ? '' : val"
           :key="ind"
-          :wrap="wrap ? 1 : 0"
+          :wrap="wrap ? true : false"
           :color="color && color[0]"
         >
           {{ val }}

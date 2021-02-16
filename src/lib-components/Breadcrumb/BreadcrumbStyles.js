@@ -1,4 +1,4 @@
-import styled from "styled-components-vue";
+import styled from "vue-styled-components";
 
 const BreadcrumbNav = styled.nav`
   & > ol {
