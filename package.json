@@ -1,7 +1,10 @@
 {
   "name": "fresh-breath-vue",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "description": "",
+  "author": "Yerassyl Kurmangali",
+  "license": "MIT",
+  "repository": "GhoulIsReal/fresh-breath-vue",
   "main": "dist/fresh-breath-vue.ssr.js",
   "browser": "dist/fresh-breath-vue.esm.js",
   "module": "dist/fresh-breath-vue.esm.js",
