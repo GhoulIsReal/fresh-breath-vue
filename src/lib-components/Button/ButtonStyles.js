@@ -6,7 +6,7 @@ const buttonProps = {
   hover: Boolean,
 };
 
-const Button = styled.button`
+const Button = styled("button", buttonProps)`
   cursor: pointer;
   padding: ${(props) => (props.inline ? "5px 15px" : "10px 15px")};
   border: ${(props) =>
